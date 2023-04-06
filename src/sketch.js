@@ -3,7 +3,7 @@ let detector
 let mario
 
 async function setup() {
-  	createCanvas(640, 480)
+  	createCanvas(1440, 700)
 
 	capture = createCapture(VIDEO)
 	capture.size(640, 480)
@@ -17,7 +17,7 @@ async function setup() {
 	detector = await createDetector()
 }
 async function draw() {
-	background(255)
+	background(0)
 	if (detector && capture.loadedmetadata) {
 		const hands = await detector.estimateHands(capture.elt, { flipHorizontal: true })
 		for (let j=0; j<hands.length; j++) {
