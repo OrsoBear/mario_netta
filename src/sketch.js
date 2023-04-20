@@ -3,7 +3,7 @@ let detector
 let mario
 
 async function setup() {
-  	createCanvas(1440, 700)
+  	createCanvas(1640, 1000)
 
 	capture = createCapture(VIDEO)
 	capture.size(640, 480)
